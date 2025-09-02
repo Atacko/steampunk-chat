@@ -8,7 +8,11 @@
 <body>
   <div id="app">
     <div id="sidebar">
-      <h2>Chats</h2>
+      <div id="sidebarHeader">
+        <h2>Chats</h2>
+        <!-- Added friend request button -->
+        <button id="friendRequestBtn" class="add-friend-btn">+</button>
+      </div>
       <ul id="friendList"></ul>
     </div>
     <div id="chat">
@@ -20,6 +24,19 @@
       </div>
     </div>
   </div>
+
+  <div id="friendRequestModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Friend Requests</h3>
+        <span class="close">&times;</span>
+      </div>
+      <div id="friendRequestList" class="friend-request-list">
+        <p>No pending friend requests</p>
+      </div>
+    </div>
+  </div>
+
   <script src="./app.js"></script>
 </body>
 </html>
